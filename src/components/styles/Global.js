@@ -7,13 +7,19 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  page.mwili {
+  mwili {
     background: ${({ theme }) => theme.colors.body};
     color: hsl(192, 100%, 9%);
     font-family: 'Poppins', sans-serif;
     font-size: 1.15em;
     margin: 0;
   }
+
+   body {
+    background: red;
+    
+  }
+
 
   p {
     opacity: 0.6;
