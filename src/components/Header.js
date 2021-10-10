@@ -51,7 +51,7 @@ function Header() {
       <Container>
         <Nav>
         
-        <img src={logo} className="Logo" alt="logo" />
+        <img src={logo} alt="logo" />
         <Button>Try It Free</Button>
          </Nav>
 
