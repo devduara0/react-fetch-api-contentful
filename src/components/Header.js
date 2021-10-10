@@ -5,7 +5,7 @@ import { createClient } from "contentful";
 //import Banner from './Banner';
 //import Hero from './Hero';
 //import Banner from './banner'
-import HeardList from './heardsList';
+import HeardsList from './heardsList';
 
 class Header extends Component {
 constructor() {
