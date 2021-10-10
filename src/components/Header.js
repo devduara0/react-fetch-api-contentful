@@ -1,11 +1,18 @@
 import { useState, useEffect } from "react";
-//import "./App.css";
+import { StyledHeader, Nav, Logo, Image } from './styles/Header.styled'
+import { Container } from './styles/Container.styled'
+import { Flex } from './styles/Flex.styled'
+import { Button } from './styles/Button.styled'
 
 const query = `
 {
    headerCollection{
     items {
       title
+      mwili
+      logo {
+        url
+      }
     }
   }
 }
@@ -30,10 +37,6 @@ function Header() {
           console.error(errors);
         }
         
-//        .then(json => {
- //           this.setState({data.HeaderCollection.items:json})
-  //      })
-        
         setPage(data.headerCollection.items[0]);
       });
   }, []);
@@ -44,10 +47,21 @@ function Header() {
 
   // render the fetched Contentful data
   return (
-    <div>
-      
-        <p>{page.title}</p>
-      
+    <StyledHeader>
+      <Container>
+        <Nav>
+        
+        <img src={logo} className="Logo" alt="logo" />
+        <Button>Try It Free</Button>
+         </Nav>
+
+        <Flex>
+          <div>
+        <h1>{page.title}</h1>
+        <p>{page.mwili}</p>
+      <Button bg='#ff0099' color='#fff'>
+              Get Started For Free
+     </Button>
     </div>
   );
 }
