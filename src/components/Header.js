@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 
 const query = `
 {
-   blogCollection{
+   HeaderCollection{
     items {
-      titile
+      title
     }
   }
 }
