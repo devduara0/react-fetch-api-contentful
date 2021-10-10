@@ -13,6 +13,9 @@ const query = `
       logo {
         url
       }
+     picha {
+        url
+      }
     }
   }
 }
@@ -63,6 +66,7 @@ function Header() {
               Get Started For Free
      </Button>
     </div>
+   <Image src={page.picha.url} alt="picha" />
    </Flex>
    </Container>
   </StyledHeader>
