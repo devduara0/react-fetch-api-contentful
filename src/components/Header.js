@@ -11,7 +11,7 @@ const query = `
 }
 `;
 
-function Bloghome() {
+function Header() {
   const [page, setPage] = useState(null);
 
   useEffect(() => {
@@ -31,10 +31,10 @@ function Bloghome() {
         }
         
 //        .then(json => {
- //           this.setState({data.blogCollection.items:json})
+ //           this.setState({data.HeaderCollection.items:json})
   //      })
         
-        setPage(data.blogCollection.items[0]);
+        setPage(data.HeaderCollection.items[0]);
       });
   }, []);
 
@@ -44,12 +44,12 @@ function Bloghome() {
 
   // render the fetched Contentful data
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>{page.titile}</p>
-      </header>
+    <div>
+      
+        <p>{page.title}</p>
+      
     </div>
   );
 }
 
-export default Bloghome;
+export default Header;
