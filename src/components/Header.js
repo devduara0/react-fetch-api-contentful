@@ -51,7 +51,7 @@ function Header() {
       <Container>
         <Nav>
         
-        <img src={logo} alt="logo" />
+        <img src={page.logo} alt="logo" />
         <Button>Try It Free</Button>
          </Nav>
 
