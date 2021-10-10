@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components'
 import Header from './components/Header'
 import GlobalStyles from './components/styles/Global'
-import Title from './components/styles/Titlr'
+import Title from './components/styles/Title.styled'
 
 const theme = {
   colors: {
