@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const query = `
 {
-   HeaderCollection{
+   headerCollection{
     items {
       title
     }
@@ -34,7 +34,7 @@ function Header() {
  //           this.setState({data.HeaderCollection.items:json})
   //      })
         
-        setPage(data.HeaderCollection.items[0]);
+        setPage(data.headerCollection.items[0]);
       });
   }, []);
 
