@@ -63,6 +63,9 @@ function Header() {
               Get Started For Free
      </Button>
     </div>
+   </Flex>
+   </Container>
+  </StyledHeader>
   );
 }
 
