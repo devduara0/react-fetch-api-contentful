@@ -12,7 +12,7 @@ const ContentsList = (props) =>{
                 
             return (
 
-<StyledCard layout={id % 2 === 0 && 'row-reverse'}>
+<StyledCard layout={'row-reverse'}>
       <div>
         <h2>{props.kichwa}</h2>
         <p>{props.mwili}</p>
