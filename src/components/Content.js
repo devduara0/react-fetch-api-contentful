@@ -21,7 +21,7 @@ fetchContents = () => this.client.getEntries()
 
 setContents = response => {
     this.setState({
-      heards: response.items
+      contents: response.items
     })
   }
 
