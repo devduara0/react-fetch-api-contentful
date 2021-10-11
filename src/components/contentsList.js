@@ -6,7 +6,7 @@ import { StyledCard } from './styles/Card.styled'
 //import * as Markdown from 'react-markdown';
 
 
-const ContentsList = (contents) =>{
+const ContentsList = (props) =>{
 
                 
                 
@@ -14,8 +14,8 @@ const ContentsList = (contents) =>{
 
 <StyledCard>
       <div>
-        <h2>{contents.kichwa}</h2>
-        <p>{contents.mwili}</p>
+        <h2>{props.kichwa}</h2>
+        <p>{props.mwili}</p>
       </div>
 
       <div>
