@@ -4,13 +4,13 @@ import React from 'react';
 //import * as Markdown from 'react-markdown';
 
 
-const HeardsList = (props) =>{
+const ContentsList = (props) =>{
 
                 
                 
             return (
   <div>
-    <h1>{props.title}</h1>
+    <h1>{props.kichwa}</h1>
    <p>{props.mwili}</p>
   </div>
 )
@@ -19,7 +19,7 @@ const HeardsList = (props) =>{
        }
    
 
-export default HeardsList;
+export default ContentsList;
 
 
 
