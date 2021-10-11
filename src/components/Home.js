@@ -38,18 +38,26 @@ class Home extends Component {
   render() {
     
     return (
-      <div className="cards">
+      <div>
         
         {this.state.contents &&
           this.state.contents.map(content => {
             
             return (
-              <div>
-                key={content.sys.id}
+        <StyledCard layout={content.sys.id % 2 === 0 && 'row-reverse'}>
+      <div>
+        <h2>{title}</h2>
+        <h2>title={content.fields.kichwa}</h2>
+        <p>body={content.fields.mwili}</p>
+      </div>
+
+      <div>
+        
+      </div>
+    </StyledCard>
                 
                 
-                title={content.fields.kichwa}
-              </div>
+              
             );
           })}
       </div>
@@ -58,3 +66,5 @@ class Home extends Component {
 }
 
 export default Home;
+
+
