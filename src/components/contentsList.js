@@ -11,10 +11,18 @@ const ContentsList = (props) =>{
                 
                 
             return (
-  <div>
-    <h1>{props.kichwa}</h1>
-   <p>{props.mwili}</p>
-  </div>
+
+<StyledCard layout={id % 2 === 0 && 'row-reverse'}>
+      <div>
+        <h2>{props.kichwa}</h2>
+        <p>{props.mwili}</p>
+      </div>
+
+      <div>
+        
+      </div>
+    </StyledCard>
+  
 )
                 
             
