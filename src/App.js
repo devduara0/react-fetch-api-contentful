@@ -1,7 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components'
 import Header from './components/Header'
-import Content from './components/Content'
+import Home from './components/Home'
+//import Content from './components/Content'
 import GlobalStyles from './components/styles/Global'
 import { Container } from './components/styles/Container.styled'
 //import Title from './components/styles/Title.styled'
@@ -24,7 +25,7 @@ function App() {
         <GlobalStyles />
         <Header />
        <Container>
-         <Content />
+         <Home />
         </Container>
         <Footer />
        
