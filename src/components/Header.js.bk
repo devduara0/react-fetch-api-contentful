@@ -1,16 +1,11 @@
 import React,{ Fragment, Component } from 'react';
 import { createClient } from "contentful";
-//import './content.scss';
-//import HomeIterm from './homeIterm';
-//import Banner from './Banner';
-//import Hero from './Hero';
-//import Banner from './banner'
-import HeardsList from './heardsList';
+import ContentsList from './contentsList';
 
-class Header extends Component {
+class Content extends Component {
 constructor() {
     super();
-    this.state = { heards: [] };
+    this.state = { content: [] };
     this.client = createClient({
       accessToken:
         "CQ4Ja0XdmfMso-gIfbIxBnEUBCFwIttPKT-R57fvZek",
@@ -20,11 +15,11 @@ constructor() {
   
 
 componentDidMount() {
-    this.fetchHeards().then(this.setHeards);
+    this.fetchContents().then(this.setContents);
   }
-fetchHeards = () => this.client.getEntries()
+fetchContents = () => this.client.getEntries()
 
-setHeards = response => {
+setContents = response => {
     this.setState({
       heards: response.items
     })
@@ -37,8 +32,8 @@ setHeards = response => {
     
     
     <div className="tr">
-      { this.state.heards.map(({fields}, i) =>
-        <HeardsList key={i} {...fields} />
+      { this.state.contents.map(({fields}, i) =>
+        <ContentsList key={i} {...fields} />
       )}
      </div>
     </Fragment>
@@ -46,4 +41,4 @@ setHeards = response => {
     }
 }
 
-export default Header;
+export default Content;
