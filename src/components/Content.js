@@ -31,11 +31,11 @@ setContents = response => {
        
     
     
-    <div className="tr">
+    
       { this.state.contents.map(({fields}, i) =>
         <ContentsList key={i} {...fields} />
       )}
-     </div>
+     
     </Fragment>
         )
     }
