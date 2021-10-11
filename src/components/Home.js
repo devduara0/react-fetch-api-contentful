@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { StyledCard } from './styles/Card.styled'
 //import Helmet from 'react-helmet';
 import { createClient } from 'contentful';
 //import PostLink from './PostLink';
