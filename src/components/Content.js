@@ -5,7 +5,7 @@ import ContentsList from './contentsList';
 class Content extends Component {
 constructor() {
     super();
-    this.state = { content: [] };
+    this.state = { contents: [] };
     this.client = createClient({
       accessToken:
         "CQ4Ja0XdmfMso-gIfbIxBnEUBCFwIttPKT-R57fvZek",
