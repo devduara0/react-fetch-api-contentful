@@ -48,12 +48,12 @@ class Home extends Component {
         <StyledCard layout={content.sys.id % 2 === 0 && 'row-reverse'}>
       <div>
         
-        <h2>title={content.fields.kichwa}</h2>
-        <p>body={content.fields.mwili}</p>
+        <h2>{content.fields.kichwa}</h2>
+        <p>{content.fields.mwili}</p>
       </div>
 
       <div>
-        
+       <img {content.fields.picha.fields.file.url} alt='' />
       </div>
     </StyledCard>
                 
