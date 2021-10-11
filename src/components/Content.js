@@ -32,8 +32,8 @@ setContents = response => {
     
     
     
-      { this.state.contents.map(({fields}, i) =>
-        <ContentsList key={i} {...fields} />
+      { this.state.contents.map((contents ) =>
+        <ContentsList key={contents.id}  />
       )}
      
     </Fragment>
