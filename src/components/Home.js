@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
+//import Helmet from 'react-helmet';
 import { createClient } from 'contentful';
 //import PostLink from './PostLink';
 
@@ -10,8 +10,8 @@ class Home extends Component {
 
   componentWillMount() {
     const client = createClient({
-      space: process.env.REACT_APP_SPACE_ID,
-      accessToken: process.env.REACT_APP_ACCESS_TOKEN
+      accessToken: "CQ4Ja0XdmfMso-gIfbIxBnEUBCFwIttPKT-R57fvZek",
+      space: "9heip63yijn8"
     });
 
     client
@@ -39,17 +39,17 @@ class Home extends Component {
     
     return (
       <div className="cards">
-        <Helmet title="Contentful Static React" />
+        
         {this.state.contents &&
           this.state.contents.map(content => {
             
             return (
-              <
+              <div>
                 key={content.sys.id}
                 
                 
                 title={content.fields.kichwa}
-              />
+              </div>
             );
           })}
       </div>
