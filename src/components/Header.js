@@ -9,11 +9,11 @@ const query = `
    headerCollection{
     items {
       title
-      mwili
+      body
       logo {
         url
       }
-     picha {
+     imagehead {
         url
       }
     }
@@ -61,12 +61,12 @@ function Header() {
         <Flex>
           <div>
         <h1>{page.title}</h1>
-        <p>{page.mwili}</p>
+        <p>{page.body}</p>
       <Button bg='#ff0099' color='#fff'>
               Get Started For Free
      </Button>
     </div>
-   <Image src={page.picha.url} alt="picha" />
+   <Image src={page.imagehead.url} alt="picha" />
    </Flex>
    </Container>
   </StyledHeader>
