@@ -47,7 +47,7 @@ class Home extends Component {
             return (
         <StyledCard layout={content.sys.id % 2 === 0 && 'row-reverse'}>
       <div>
-        <h2>{title}</h2>
+        
         <h2>title={content.fields.kichwa}</h2>
         <p>body={content.fields.mwili}</p>
       </div>
