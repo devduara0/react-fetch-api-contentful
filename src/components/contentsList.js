@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { StyledCard } from './styles/Card.styled'
+
 //import { Link } from 'react-router-dom';
 //import * as Markdown from 'react-markdown';
 
