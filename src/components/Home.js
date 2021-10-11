@@ -53,7 +53,7 @@ class Home extends Component {
       </div>
 
       <div>
-       <img {content.fields.picha.fields.file.url} alt='' />
+       <img src={content.fields.picha.fields.file.url} alt='' />
       </div>
     </StyledCard>
                 
