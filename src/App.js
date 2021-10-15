@@ -18,7 +18,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <p>Hello World!</>
+        <p>Hello World!</p>
        
       </>
     </ThemeProvider>
