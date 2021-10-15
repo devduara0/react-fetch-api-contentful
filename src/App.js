@@ -15,11 +15,11 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      
+      <>
         <GlobalStyles />
         <p>Hello World!</p>
        
-      
+      </>
     </ThemeProvider>
   )
 }
