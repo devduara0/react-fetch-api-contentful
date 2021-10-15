@@ -1,17 +1,28 @@
+import React from 'react';
+import { ThemeProvider } from 'styled-components'
+import GlobalStyles from './components/styles/Global'
 
-// Step 1: Import React
-import * as React from 'react'
 
-// Step 2: Define your component
-const App = () => {
+const theme = {
+  colors: {
+    header: '#ebfbff',
+    body: '#fff',
+    footer: '#003333',
+    
+  },
+  mobile: '768px',
+}
+
+function App() {
   return (
-    <main>
-      
-      <h1>Hello world!</h1>
-      
-    </main>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <p>Hello World!</>
+       
+      </>
+    </ThemeProvider>
   )
 }
 
-// Step 3: Export your component
 export default App
