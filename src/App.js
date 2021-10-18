@@ -1,12 +1,12 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components'
 import Header from './components/Header'
-import Home from './components/Home'
+//import Home from './components/Home'
 //import Content from './components/Content'
 import GlobalStyles from './components/styles/Global'
-import { Container } from './components/styles/Container.styled'
+//import { Container } from './components/styles/Container.styled'
 //import Title from './components/styles/Title.styled'
-import Footer from './components/Footer'
+//import Footer from './components/Footer'
 
 const theme = {
   colors: {
@@ -24,10 +24,10 @@ function App() {
       <>
         <GlobalStyles />
         <Header />
-       <Container>
-         <Home />
-        </Container>
-        <Footer />
+       
+         
+        
+    
        
       </>
     </ThemeProvider>
