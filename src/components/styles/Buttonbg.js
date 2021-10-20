@@ -9,7 +9,7 @@ export const Buttonbg = styled.button`
   font-weight: 700;
   padding: 15px 60px;
   //background-color: ${({ bg }) => bg || '#fff'};
-  background-color: ${({ theme }) => theme.colors.buttonbg};
+  buttonbg: ${({ theme }) => theme.colors.buttonbg};
   color: ${({ color }) => color || '#333'};
 
   &:hover {
