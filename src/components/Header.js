@@ -3,6 +3,7 @@ import { StyledHeader, Nav, Logo, Image } from './styles/Header.styled'
 import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
 import { Button } from './styles/Button.styled'
+import { Buttonbg } from './styles/Buttonbg'
 
 const query = `
 {
@@ -62,9 +63,9 @@ function Header() {
           <div>
         <h1>{page.title}</h1>
         <p>{page.body}</p>
-      <Button bg='#ff0099' color='#fff'>
+      <Buttonbg>
               Get Started For Free
-     </Button>
+     </Buttonbg>
     </div>
    <Image src={page.imagehead.url} alt="picha" />
    </Flex>
