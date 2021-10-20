@@ -8,7 +8,7 @@ const theme = {
     header: '#ebfbff',
     body: '#3a00df',
     footer: '#003333',
-    
+    button: '#00FA9A',
   },
   mobile: '768px',
 }
