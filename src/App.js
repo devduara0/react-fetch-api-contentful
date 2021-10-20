@@ -4,6 +4,7 @@ import Header from './components/Header'
 //import Home from './components/Home'
 //import Content from './components/Content'
 import GlobalStyles from './components/styles/Global'
+import { Buttonbg } from './components/styles/Buttonbg'
 import { Container } from './components/styles/Container.styled'
 //import Title from './components/styles/Title.styled'
 //import Footer from './components/Footer'
@@ -25,6 +26,7 @@ function App() {
       <>
         <GlobalStyles />
         <Header />
+        <Buttonbg />
        
           <Container>
          <p>Hello World</p>
