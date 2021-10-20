@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { StyledHeader, Nav, Logo, Image } from './styles/Header.styled'
 import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
-import { Button } from './styles/Button.styled'
+//import { Button } from './styles/Button.styled'
 import { Buttonbg } from './styles/Buttonbg'
 
 const query = `
@@ -56,7 +56,7 @@ function Header() {
         <Nav>
         
         <Logo src={page.logo.url} alt="logo" />
-        <Button>Try It Free</Button>
+        <Buttonbg>Try It Free</Buttonbg>
          </Nav>
 
         <Flex>
