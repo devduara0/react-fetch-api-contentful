@@ -13,7 +13,7 @@ const theme = {
     header: '#ebfbff',
     body: '#fff',
     footer: '#003333',
-    buttongb: '#00FA9A',
+    buttonbg: '#00FA9A',
     
   },
   mobile: '768px',
