@@ -8,9 +8,9 @@ import { Buttonbg } from './styles/Buttonbg'
 //dotenv.config()
 
 
-const space = require('stripe')(CONTENTFUL_SPACE_ID);
+const space = require('stripe')(process.env.CONTENTFUL_SPACE_ID);
 
-const accessToken = require('stripe')(CONTENTFUL_TKNEO);
+const accessToken = require('stripe')(process.env.CONTENTFUL_TKNEO);
 
 //const space = process.env.REAT_PUBLIC_CONTENTFUL_SPACE_ID
 //const accessToken = process.env.PUBLIC_CONTENTFUL_ACCESS
