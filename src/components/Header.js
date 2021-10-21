@@ -4,10 +4,16 @@ import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
 //import { Button } from './styles/Button.styled'
 import { Buttonbg } from './styles/Buttonbg'
-const dotenv =  require('dotenv');
-dotenv.config()
-const space = process.env.REAT_PUBLIC_CONTENTFUL_SPACE_ID
-const accessToken = process.env.PUBLIC_CONTENTFUL_ACCESS
+//const dotenv =  require('dotenv');
+//dotenv.config()
+
+
+const space = require('stripe')(CONTENTFUL_SPACE_ID);
+
+const space = require('stripe')(CONTENTFUL_TKNEO);
+
+//const space = process.env.REAT_PUBLIC_CONTENTFUL_SPACE_ID
+//const accessToken = process.env.PUBLIC_CONTENTFUL_ACCESS
 const query = `
 {
    headerCollection{
