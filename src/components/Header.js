@@ -7,7 +7,7 @@ import { Buttonbg } from './styles/Buttonbg'
 const dotenv =  require('dotenv');
 dotenv.config()
 const space = process.env.REAT_PUBLIC_CONTENTFUL_SPACE_IDtwo
-const accessToken = process.env.REAT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
+//const accessToken = process.env.REAT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
 const query = `
 {
    headerCollection{
