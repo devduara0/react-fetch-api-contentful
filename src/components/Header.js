@@ -45,7 +45,7 @@ function Header() {
   }, []);
 
   if (!page) {
-    return "App ina Load...";
+    return "Ina ...";
   }
 
   // render the fetched Contentful data
@@ -63,7 +63,7 @@ function Header() {
         <h1>{page.title}</h1>
         <p>{page.body}</p>
       <Button bg='#873e23' color='#fff'>
-              Bofya hapa kujuwa zaidi 
+              kujuwa zaidi 
      </Button>
     </div>
    <Image src={page.imagehead.url} alt="picha" />
