@@ -62,7 +62,7 @@ function Header() {
           <div>
         <h1>{page.title}</h1>
         <p>{page.body}</p>
-      <Button bg='#ff0099' color='#fff'>
+      <Button bg='#873e23' color='#fff'>
               Get Started For Free
      </Button>
     </div>
