@@ -63,7 +63,7 @@ function Header() {
         <h1>{page.title}</h1>
         <p>{page.body}</p>
       <Button bg='#873e23' color='#fff'>
-              Get Started For Free
+              Bofya hapa kujuwa zaidi 
      </Button>
     </div>
    <Image src={page.imagehead.url} alt="picha" />
