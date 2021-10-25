@@ -45,7 +45,7 @@ function Header() {
   }, []);
 
   if (!page) {
-    return "Loading...";
+    return "App ina Load...";
   }
 
   // render the fetched Contentful data
