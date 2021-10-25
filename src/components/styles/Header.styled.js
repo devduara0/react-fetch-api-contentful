@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 
 export const Logo = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 `
 
