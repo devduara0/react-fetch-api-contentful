@@ -55,7 +55,7 @@ function Header() {
         <Nav>
         
         <Logo src={page.logo.url} alt="logo" />
-        <Button>Try It Free</Button>
+        <Button>Kujiunga ni bure</Button>
          </Nav>
 
         <Flex>
