@@ -1,8 +1,8 @@
 {
-  "short_name": "React App",
+  "short_name": "Dodosa",
   "name": "Create React App Sample",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#b3dbc9",
+  "background_color": "#003333"
 }
