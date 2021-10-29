@@ -45,7 +45,7 @@ function Header() {
   }, []);
 
   if (!page) {
-    return "Ina ...";
+    return "Ina jaa...";
   }
 
   // render the fetched Contentful data
