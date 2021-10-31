@@ -38,7 +38,7 @@ function Header() {
 
       .then(({ data, errors }) => {
         if (data) {
-          console.data(data);
+          console.log(data);
         }
         
         setPage(data.headerCollection.items[0]);
