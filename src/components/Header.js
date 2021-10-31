@@ -26,7 +26,7 @@ function Header() {
 
   useEffect(() => {
     window
-      .fetch(`https://graphql.contentful.com/content/v1/spaces/9heip63yijn8/`, {
+      .fetch(`${process.env.REACT_APP_NOT_SECRET_KD}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
