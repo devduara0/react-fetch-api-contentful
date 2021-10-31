@@ -35,6 +35,8 @@ function Header() {
         body: JSON.stringify({ query }),
       })
       .then((response) => response.json())
+      .then(data => console.log(data));
+
       .then(({ data, errors }) => {
         if (errors) {
           console.error(errors);
