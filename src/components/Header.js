@@ -30,7 +30,7 @@ function Header() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${REACT_APP_NOT_SECRET_CODE}`
+          Authorization: `Bearer ${process.env.REACT_APP_NOT_SECRET_CODE}`
         },
         body: JSON.stringify({ query }),
       })
