@@ -47,7 +47,7 @@ function Header() {
   if (!page) {
     return "Ina jaa...";
   }
-
+  console.log(page)
   // render the fetched Contentful data
   return (
     <StyledHeader>
