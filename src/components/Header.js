@@ -35,10 +35,9 @@ function Header() {
         body: JSON.stringify({ query }),
       })
       .then((response) => response.json())
-
       .then(({ data, errors }) => {
-        if (data) {
-          console.log(data);
+        if (errors) {
+          console.error(errors);
         }
         
         setPage(data.headerCollection.items[0]);
@@ -49,7 +48,7 @@ function Header() {
     return "Ina jaa...";
   }
   
-  // render the fetched Contentful data
+  
   return (
     <StyledHeader>
       <Container>
