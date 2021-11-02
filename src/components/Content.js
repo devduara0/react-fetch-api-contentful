@@ -10,7 +10,7 @@ class Content extends Component {
 
   componentWillMount() {
     const client = createClient({
-      accessToken: "CQ4Ja0XdmfMso-gIfbIxBnEUBCFwIttPKT-R57fvZek",
+      accessToken: `${process.env.REACT_APP_NOT_SECRET_CODE}`,
       space: `${process.env.REACT_APP_NOT_SEKRET}`
     });
 
