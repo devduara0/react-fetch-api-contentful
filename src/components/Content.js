@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { StyledCard } from './styles/Card.styled'
-//import Helmet from 'react-helmet';
 import { createClient } from 'contentful';
-//import PostLink from './PostLink';
+
 
 class Content extends Component {
   state = {
@@ -12,7 +11,7 @@ class Content extends Component {
   componentWillMount() {
     const client = createClient({
       accessToken: "CQ4Ja0XdmfMso-gIfbIxBnEUBCFwIttPKT-R57fvZek",
-      space: "9heip63yijn8"
+      space: `${process.env.REACT_APP_NOT_SEKRET}`
     });
 
     client
@@ -33,7 +32,7 @@ class Content extends Component {
           })
           .catch(console.error);
       })
-      .catch(console.error);
+      
   }
 
   render() {
