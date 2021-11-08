@@ -1,7 +1,7 @@
 import SocialIcons from './SocialIcons'
 import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
-import { StyledFooter } from './styles/Footer.
+import { StyledFooter } from './styles/Footer'
 
 const query = `
 {
