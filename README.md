@@ -61,3 +61,12 @@ git clone https://github.com/devduara0/react-fetch-api-contentful
 cd react-fetch-api-contentful
 npm install
 ``` 
+Baada ya installation itabidi ubadilishe
+Varible za `process.env` na kuweka tarifa 
+zako za access token pamoja na space id ambazo
+ume zipata kutokea contentful 
+
+tarifa hizi utaziweka kwenye mafaili yote 
+matatu **Header.js Content.js Footer.js** 
+mafaili yote haya yana patikana kwenye directory ya 
+`src` `components`
