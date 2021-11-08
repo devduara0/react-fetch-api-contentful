@@ -18,10 +18,10 @@ Nje ya box kuna sehemu nne
 Ambozo unaweza kubadilisha 
 Settings ili kuathiri muonekano
 
-App ------ application zima kwa ujumla
-Header ------ Header peke yake
-Content ------ Content peke yake
-Footer  ------ Footer peke yake
+- App ------ application zima kwa ujumla
+- Header ------ Header peke yake
+- Content ------ Content peke yake
+- Footer  ------ Footer peke yake
 
 
 
@@ -38,7 +38,18 @@ Application inategemea kupata yaliyomo "content"
 Kutokea contentful kwa mantiki hiyo kabla
 Yayote hakikisha una elekee contentful alafu usajili account 
 Ukisha sajili account hakikisha unapata token pamoja na 
-Access keys utazihitaji 
+Access keys utazihitaji na utatengeneza yaliyomo yenye
+muundo wadata kama huu 
+**Header** 
+
+![Heardcontentful](https://i.ibb.co/0Z2cfJS/heardcontentful.jpg)
+
+
+**Content** 
+![content Contentful](https://i.ibb.co/gjm0nLz/contentcontentful.jpg)
+**Footer** 
+![Footer Contentful ](https://i.ibb.co/YTpQqfK/footercontentful.jpg)
+
 
 
 # installation ya app
