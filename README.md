@@ -53,6 +53,11 @@ muundo wadata kama huu
 
 
 # installation ya app
+```
+git clone https://github.com/devduara0/react-fetch-api-contentful
+```
 
-
-
+```
+cd react-fetch-api-contentful
+npm install
+``` 
