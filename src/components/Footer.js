@@ -1,14 +1,16 @@
-import { useState, useEffect } from "react";
-import { StyledHeader } from './styles/Header.styled'
+import SocialIcons from './SocialIcons'
 import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
-import { Button } from './styles/Button.styled'
+import { StyledFooter } from './styles/Footer.
 
 const query = `
 {
    footerCollection{
     items {
       body
+      logo {
+        url
+      }
       }
     }
   }
@@ -43,26 +45,37 @@ function Footer() {
   
   
   return (
-    <StyledHeader>
+      <StyledFooter>
       <Container>
-        
-        
-        
-        
-         
+      <img src={page.logo.url} alt="logo" />
 
         <Flex>
-          <div>
-        
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </li>
+            <li>+1-543-123-4567</li>
+            <li>example@huddle.com</li>
+          </ul>
+          <ul>
+            <li>About Us</li>
+            <li>What We Do</li>
+            <li>FAQ</li>
+          </ul>
+
+          <ul>
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
+
+          <SocialIcons />
+        </Flex>
+
         <p>{page.body}</p>
-      <Button bg='#873e23' color='#fff'>
-              kujuwa zaidi 
-     </Button>
-    </div>
-   
-   </Flex>
-   </Container>
-  </StyledHeader>
+      </Container>
+    </StyledFooter>
   );
 }
 
