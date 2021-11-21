@@ -1,6 +1,7 @@
 {
   "name": "dodosa",
   "author": "devduara0",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +16,8 @@
     "contentful": "7.2.0",
     "styled-components": "^5.3.1",
     "web-vitals": "^1.0.1"
+   
+    
   },
   "scripts": {
     "start": "react-scripts start",
