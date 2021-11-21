@@ -27,11 +27,11 @@ function Header() {
 
   useEffect(() => {
     window
-      .fetch(`https://graphql.contentful.com/content/v1/spaces/9heip63yijn8/`, {
+      .fetch(`${process.env.REACT_APP_NOT_SECRET_KD}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Bearer CQ4Ja0XdmfMso-gIfbIxBnEUBCFwIttPKT-R57fvZek",
+          Authorization: `Bearer ${process.env.REACT_APP_NOT_SECRET_CODE}`
         },
         body: JSON.stringify({ query }),
       })
@@ -46,25 +46,25 @@ function Header() {
   }, []);
 
   if (!page) {
-    return "Loading...";
+    return "Ina jaa...";
   }
-
-  // render the fetched Contentful data
+  
+  
   return (
     <StyledHeader>
       <Container>
         <Nav>
         
         <Logo src={page.logo.url} alt="logo" />
-        <Button>Try It Free</Button>
+        <Button>jiunge hapa bure</Button>
          </Nav>
 
         <Flex>
           <div>
         <h1>{page.title}</h1>
         <p>{page.body}</p>
-      <Button bg='#ff0099' color='#fff'>
-              Get Started For Free
+      <Button bg='#873e23' color='#fff'>
+              kujuwa zaidi 
      </Button>
     </div>
    <Image src={page.imagehead.url} alt="picha" />

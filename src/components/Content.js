@@ -1,44 +1,70 @@
-import React,{ Fragment, Component } from 'react';
-import { createClient } from "contentful";
-import ContentsList from './contentsList';
+import React, { Component } from 'react';
+import { StyledCard } from './styles/Card.styled'
+import { createClient } from 'contentful';
+
 
 class Content extends Component {
-constructor() {
-    super();
-    this.state = { contents: [] };
-    this.client = createClient({
-      accessToken:
-        "CQ4Ja0XdmfMso-gIfbIxBnEUBCFwIttPKT-R57fvZek",
-      space: "9heip63yijn8"
+  state = {
+    contents: null
+  };
+
+  componentWillMount() {
+    const client = createClient({
+      accessToken: `${process.env.REACT_APP_NOT_SECRET_CODE}`,
+      space: `${process.env.REACT_APP_NOT_SEKRET}`
     });
-}
-  
 
-componentDidMount() {
-    this.fetchContents().then(this.setContents);
+    client
+      .getContentTypes()
+      .then(response => {
+        const postType = response.items.find(item => item.name === 'Content');
+        return postType.sys.id;
+      })
+      .then(id => {
+        client
+          .getEntries({
+            content_type: id
+          })
+          .then(response => {
+            this.setState({
+              contents: response.items
+            });
+          })
+          .catch(console.error);
+      })
+      
   }
-fetchContents = () => this.client.getEntries()
 
-setContents = response => {
-    this.setState({
-      contents: response.items
-    })
+  render() {
+    
+    return (
+      <div>
+        
+        {this.state.contents &&
+          this.state.contents.map(content => {
+            
+            return (
+        <StyledCard layout={content.sys.id % 2 === 0 && 'row-reverse'}>
+      <div>
+        
+        <h2>{content.fields.kichwa}</h2>
+        <p>{content.fields.mwili}</p>
+      </div>
+
+      <div>
+       <img src={content.fields.picha.fields.file.url} alt='' />
+      </div>
+    </StyledCard>
+                
+                
+              
+            );
+          })}
+      </div>
+    );
   }
-
-    render(){
-        return(
-            <Fragment>
-       
-    
-    
-    
-      { this.state.contents.map((contents ) =>
-        <ContentsList key={contents.id}  />
-      )}
-     
-    </Fragment>
-        )
-    }
 }
 
 export default Content;
+
+
