@@ -3,7 +3,7 @@ import { StyledHeader, Nav, Logo, Image } from './styles/Header.styled'
 import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
 import { Button } from './styles/Button.styled'
-import { Buttonbg } from './styles/Buttonbg'
+//import { Buttonbg } from './styles/Buttonbg'
 
 const query = `
 {
