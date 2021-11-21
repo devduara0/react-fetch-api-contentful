@@ -56,19 +56,19 @@ function Footer() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </li>
-            <li>+1-543-123-4567</li>
-            <li>example@huddle.com</li>
+            <li>+255-743-123-4567</li>
+            <li>example@dodosa.com</li>
           </ul>
           <ul>
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>FAQ</li>
+            <li>Kuhusu Sisi</li>
+            <li>Tunafanya nini</li>
+            <li>Maswali ya mara kwa mara</li>
           </ul>
 
           <ul>
-            <li>Career</li>
+            <li>Ajira</li>
             <li>Blog</li>
-            <li>Contact Us</li>
+            <li>Wasiliana Nasi</li>
           </ul>
 
           <SocialIcons />
