@@ -1,6 +1,7 @@
 {
   "name": "dodosa",
   "author": "devduara0",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
