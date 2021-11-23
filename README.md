@@ -7,8 +7,7 @@ Contentful pamoja na React
 Nimeitengeneza makhususi kwa ajili ya
 mtu yoyote anaye taka kujifunza react 
 Lakini hasa mchakato mzima wa serverless
-Blog inapatikana hapa imekwenda ndani na
-Es6 pamoja na mitindo kwenye vifaa.
+
  
 Lau kama unahitajika application ya haraka
 kwajili ya shughuli zako basi 
